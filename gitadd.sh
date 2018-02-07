@@ -7,3 +7,4 @@ git add do2.sh
 git add gitadd.sh
 git add README.md
 git add test.cx
+git add test.txt
