@@ -1,4 +1,11 @@
 <h1>Dancing LEDs</h1>
+A set of gcc compiled programs that generate a text file with characters like:<br />
+0xAA, 0xFF, 0x01...<br />
+that can be cut and pasted to an AVR program which<br />
+loads each character to PORTD which is hooked up to (8) LEDs<br />
+<br />
+You can use any port you like or any architecture<br />
+<br />
 1) run do1.sh to generate test.txt<br />
 2) edit out all the comments in test.txt<br />
 3) cut and paste test.txt to what's in between<br /> 
@@ -11,18 +18,18 @@
 <br />
 <h2>topview pinout for ProMini with reset switch at bottom</h2>
 <br />
-#PD1		RAW<br />
-#PD0		GND<br />
- PC6		PC6<br />
- GND		VCC<br />
-#PD2		PC3<br />
-#PD3		PC2<br />
-#PD4		PC1<br />
-#PD5		PC0<br />
-#PD6		PB5<br />
-#PD7		PB4<br />
- PB0		PB3<br />
- PB1		PCB2<br />
+#PD1       RAW<br />
+#PD0       GND<br />
+ PC6       PC6<br />
+ GND       VCC<br />
+#PD2       PC3<br />
+#PD3       PC2<br />
+#PD4       PC1<br />
+#PD5       PC0<br />
+#PD6       PB5<br />
+#PD7       PB4<br />
+ PB0       PB3<br />
+ PB1       PCB2<br />
 <br />
 LEDs are connected to PORTD (marked as '#')<br />
 <br />
