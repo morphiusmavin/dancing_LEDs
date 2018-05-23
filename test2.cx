@@ -26,7 +26,7 @@ int main(void)
 	mask = 1;
 	j = 0;
 
-	printf("fill from right\n");
+//	printf("fill from right\n");
 	for(i = 0;i < 8;i++)
 	{
 		test |= mask;
@@ -36,7 +36,7 @@ int main(void)
 	j += i;
 
 	mask = 0x80;
-	printf("\nsingle digit from left (reverse)\n");
+//	printf("\nsingle digit from left (reverse)\n");
 
 	for(i = 0;i < 7;i++)
 	{
@@ -47,7 +47,7 @@ int main(void)
 	}
 	j += i;
 	mask = 1;
-	printf("\nsingle digit from right (reverse)\n");
+//	printf("\nsingle digit from right (reverse)\n");
 
 	for(i = 0;i < 8;i++)
 	{
@@ -58,7 +58,7 @@ int main(void)
 	}
 	j += i;
 
-	printf("\nsingle digit from right (reverse)\n");
+//	printf("\nsingle digit from right (reverse)\n");
 
 	mask = 1;
 	for(i = 0;i < 7;i++)
@@ -70,7 +70,7 @@ int main(void)
 	}
 	j += i;
 	mask = 0x80;
-	printf("\nsingle digit from left (reverse)\n");
+//	printf("\nsingle digit from left (reverse)\n");
 
 	for(i = 0;i < 8;i++)
 	{
@@ -84,8 +84,7 @@ int main(void)
 	printf("0x%x, ",test);
 	j++;
 
-
-	printf("\nsingle digit from left (reverse 3x)\n");
+//	printf("\nsingle digit from left (reverse 3x)\n");
 	for(k = 0;k < 3;k++)
 	{
 		mask = 0x80;
@@ -99,7 +98,8 @@ int main(void)
 		printf("\n");
 		j += i;
 	}
-	printf("\nsingle digit from right (reverse 3x)\n");
+
+//	printf("\nsingle digit from right (reverse 3x)\n");
 	for(k = 0;k < 3;k++)
 	{
 		mask = 1;
@@ -114,7 +114,7 @@ int main(void)
 		j += i;
 	}
 
-	printf("\nclear from left\n");
+//	printf("\nclear from left\n");
 	mask = 0x80;
 	for(i = 0;i < 8;i++)
 	{
