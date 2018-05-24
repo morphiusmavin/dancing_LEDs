@@ -26,10 +26,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void Data_Out (UCHAR data);
+
+#define DATA0		PORTD2		// D2
+#define DATA1		PORTD3		// D3
+#define DATA2		PORTD4		// D4
+#define DATA3		PORTD5		// D5
+#define DATA4		PORTD6		// D6
+#define DATA5		PORTD7		// D7
+#define DATA6		PORTB0		// D8
+#define DATA7		PORTB1		// D9
+
 #define LED_PORT PORTD
 #define LED_DDR DDRD
 #define LEN 100
-#define TOTAL 146
+#define TOTAL 300
 #define DELAY 5
 #endif
 
@@ -110,8 +121,10 @@ int main(void)
 	int i,j;
 	int time_delay;
 	UCHAR xbyte;
-	LED_DDR = 0xff;
-	DDRB = 0xff;
+
+	DDRB |= 0x03;
+	DDRD |= 0xFC;
+
 
 //******************************************************************************************//
 //*********************************** start of main loop ***********************************//
@@ -130,3 +143,8 @@ int main(void)
 	return (0);									  // this should never happen
 }
 
+void Data_Out (UCHAR data)
+{
+	PORTD = 0xFC & (data << 2);
+	PORTB = 0x03 & (data >> 6);
+}

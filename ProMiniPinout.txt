@@ -179,14 +179,6 @@ pin labels on bottom left with reset button on left
 10 - SS
 reset - CS (when programming otherwise when using as SPI this goes to SS?)
 
-1 2 3 4 5 6
-1) MOSI			- 11 MOSI grey wire
-2) MISO			- 12 MISO black wire
-3) CLK			- 13 SCLK purple wire
-4) RST			- white wire
-5) GND
-6) not connected
-
 ICD cable from programmer looking at hole side with cable up:
 
 1	2	3	4	5
@@ -205,10 +197,10 @@ ICD cable from programmer looking at hole side with cable up:
 
 bottom view w/ reset button on right
 
-									LED1	LED2	LED3							BUTTON
+
 TX		RX		RESET		gnd		PD2		PD3		PD4		PD5		PD6		PD7		PB0		PB1
 
 RAW		gnd		RESET		VCC		PC3		PC2		PC1		PC0		PB5		PB4		PB3		PB2
-											RED		YELLOW	GREEN	SCLK	MISO	MOSI
+																	SCLK	MISO	MOSI
 
 
