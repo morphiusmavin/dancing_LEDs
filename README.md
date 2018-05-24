@@ -5,8 +5,9 @@ that can be cut and pasted to an AVR program which<br />
 loads each character to PORTD which is hooked up to (8) LEDs<br />
 <br />
 You can use any port you like or any architecture<br />
+(see https://www.youtube.com/edit?o=U&video_id=KuUYy5ytZ7U)<br />
 <br />
-1) run do1.sh to generate test.txt<br />
+1) compile and run one of the temp/test.c programs generate test.txt<br />
 2) edit out all the comments in test.txt<br />
 3) cut and paste test.txt to what's in between<br /> 
 	the curly brackets of buf[] = {...}<br />
